@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      "https://pixel-wave.n8nlaunchpad.com/webhook-test/df3a79db-e7c0-4a0f-8a93-140bb3604b09",
+      "https://pixel-wave.n8nlaunchpad.com/webhook/df3a79db-e7c0-4a0f-8a93-140bb3604b09",
       {
         method: "POST",
         headers: {
