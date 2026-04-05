@@ -61,6 +61,27 @@ const trustPoints = [
   { title: 'Conversion Focused', icon: TrendingUp },
 ];
 
+const testimonials = [
+  {
+    quote: "Vista Visuals transformed our online presence. The new website is not only beautiful but also drives significantly more leads than our old one.",
+    author: "Arjun Mehta",
+    company: "Blueeyes Eco Resort",
+    image: "https://i.pravatar.cc/150?u=arjun"
+  },
+  {
+    quote: "The speed and professionalism of the team are unmatched. They delivered a high-converting landing page in record time.",
+    author: "Sarah Johnson",
+    company: "n8n LaunchPad",
+    image: "https://i.pravatar.cc/150?u=sarah"
+  },
+  {
+    quote: "I was skeptical about the 14-day guarantee, but they exceeded my expectations. The design is premium and reflects our brand perfectly.",
+    author: "Dr. Anjali Sharma",
+    company: "Krishna Ayurveda",
+    image: "https://i.pravatar.cc/150?u=anjali"
+  }
+];
+
 const whyChooseUs = [
   { title: 'Premium Design', description: 'We don\'t use templates. Every design is custom-made for your brand.' },
   { title: 'Conversion Focused', description: 'Our designs are backed by psychology to drive more sales and leads.' },
@@ -94,6 +115,8 @@ const SectionHeader = ({ title, subtitle, centered = true }: { title: string, su
 );
 
 export default function Home() {
+  const [currency, setCurrency] = React.useState<'INR' | 'USD'>('INR');
+
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -279,13 +302,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Testimonials Section */}
       <section className="py-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader 
+            title="What Our Clients Say" 
+            subtitle="Don't just take our word for it. Here's what business owners have to say about working with us."
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.author}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-8 rounded-3xl bg-white/5 border border-white/5 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex gap-1 mb-6 text-yellow-500">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} fill="currentColor" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 text-lg italic mb-8 leading-relaxed">
+                    "{testimonial.quote}"
+                  </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.author}
+                    referrerPolicy="no-referrer"
+                    className="w-12 h-12 rounded-full border border-white/10"
+                  />
+                  <div>
+                    <h4 className="font-bold text-white">{testimonial.author}</h4>
+                    <p className="text-gray-500 text-sm">{testimonial.company}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-32 px-6 bg-white/[0.02]">
         <div className="max-w-7xl mx-auto">
           <SectionHeader 
             title="Simple, Transparent Pricing" 
             subtitle="One premium package designed to cover everything your business needs."
           />
+          
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex p-1 rounded-xl bg-white/5 border border-white/10">
+              <button
+                onClick={() => setCurrency('INR')}
+                className={cn(
+                  "px-6 py-2 rounded-lg font-bold transition-all",
+                  currency === 'INR' ? "bg-blue-500 text-white shadow-lg" : "text-gray-400 hover:text-white"
+                )}
+              >
+                INR
+              </button>
+              <button
+                onClick={() => setCurrency('USD')}
+                className={cn(
+                  "px-6 py-2 rounded-lg font-bold transition-all",
+                  currency === 'USD' ? "bg-blue-500 text-white shadow-lg" : "text-gray-400 hover:text-white"
+                )}
+              >
+                USD
+              </button>
+            </div>
+          </div>
           
           <div className="max-w-lg mx-auto">
             <motion.div
@@ -299,7 +391,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-2">Professional Website Design</h3>
               <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-5xl font-bold">₹35,000</span>
+                <span className="text-5xl font-bold">{currency === 'INR' ? '₹35,000' : '$400'}</span>
                 <span className="text-white/70">/project</span>
               </div>
               

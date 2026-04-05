@@ -1,22 +1,44 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
+export default async function handler(
+  req: VercelRequest,
+  res: VercelResponse
+) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  const { name, businessName, email, phone, details } = req.body;
+
+  if (!name || !email || !details) {
+    return res.status(400).json({ error: 'Name, email, and details are required.' });
   }
 
   try {
-    const response = await fetch(
-      "https://pixel-wave.n8nlaunchpad.com/webhook/df3a79db-e7c0-4a0f-8a93-140bb3604b09",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(req.body),
-      }
-    );
+    const webhookUrl = process.env.WEBHOOK_URL || "https://pixel-wave.n8nlaunchpad.com/webhook/df3a79db-e7c0-4a0f-8a93-140bb3604b09";
+    
+    // Build query parameters for GET request
+    const params = new URLSearchParams({
+      name: String(name),
+      businessName: String(businessName || ""),
+      email: String(email),
+      phone: String(phone || ""),
+      details: String(details)
+    });
 
-    return res.status(200).json({ success: true });
+    const response = await fetch(`${webhookUrl}?${params.toString()}`, {
+      method: 'GET',
+    });
+
+    if (response.ok) {
+      return res.status(200).json({ message: "Form submitted successfully to webhook." });
+    } else {
+      const errorText = await response.text();
+      console.error("Webhook error:", errorText);
+      return res.status(500).json({ error: "Failed to submit form to webhook." });
+    }
   } catch (error) {
-    return res.status(500).json({ error: "Webhook failed" });
+    console.error("Error submitting to webhook:", error);
+    return res.status(500).json({ error: "Failed to submit form. Please try again later." });
   }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "Vista Visuals",
+  "short_name": "VistaVisuals",
+  "description": "Premium Web Design Agency",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/vista/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/vista/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

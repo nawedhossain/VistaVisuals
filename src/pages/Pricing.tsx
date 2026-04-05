@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2, Zap, ArrowRight, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { cn } from '@/src/lib/utils';
 
 export default function Pricing() {
+  const [currency, setCurrency] = React.useState<'INR' | 'USD'>('INR');
+
   return (
     <div className="pt-32 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -23,6 +26,29 @@ export default function Pricing() {
           >
             One premium package designed to cover everything your business needs to succeed online.
           </motion.p>
+        </div>
+
+        <div className="flex justify-center mb-16">
+          <div className="inline-flex p-1 rounded-xl bg-white/5 border border-white/10">
+            <button
+              onClick={() => setCurrency('INR')}
+              className={cn(
+                "px-8 py-3 rounded-lg font-bold transition-all",
+                currency === 'INR' ? "bg-blue-500 text-white shadow-lg" : "text-gray-400 hover:text-white"
+              )}
+            >
+              INR
+            </button>
+            <button
+              onClick={() => setCurrency('USD')}
+              className={cn(
+                "px-8 py-3 rounded-lg font-bold transition-all",
+                currency === 'USD' ? "bg-blue-500 text-white shadow-lg" : "text-gray-400 hover:text-white"
+              )}
+            >
+              USD
+            </button>
+          </div>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -75,7 +101,7 @@ export default function Pricing() {
                 </div>
                 <h3 className="text-3xl font-bold mb-2">Professional Website</h3>
                 <div className="flex items-baseline gap-2 mb-8">
-                  <span className="text-6xl font-bold">₹35,000</span>
+                  <span className="text-6xl font-bold">{currency === 'INR' ? '₹35,000' : '$400'}</span>
                   <span className="text-white/70">/project</span>
                 </div>
                 <p className="text-white/80 mb-10 text-lg leading-relaxed">
