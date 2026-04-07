@@ -22,14 +22,12 @@ const portfolioItems = [
     id: 1, 
     name: 'Blueeyes Eco Resort', 
     category: 'Resort & Hospitality Website', 
-    image: 'https://picsum.photos/seed/resort/800/600',
     description: 'Designed a premium resort website with room showcase, amenities, gallery, and booking-focused layout.'
   },
   { 
     id: 2, 
     name: 'n8n LaunchPad', 
     category: 'SaaS / Tech Website', 
-    image: 'https://picsum.photos/seed/software/800/600',
     description: 'Built a modern SaaS-style website for a managed n8n hosting platform.'
   },
   { 
@@ -42,7 +40,6 @@ const portfolioItems = [
     id: 4, 
     name: 'Krishna Ayurveda', 
     category: 'Ayurveda / Wellness Website', 
-    image: 'https://picsum.photos/seed/wellness/800/600',
     description: 'Designed a clean and trust-focused Ayurveda website with product presentation and easy navigation.'
   },
 ];
@@ -64,15 +61,15 @@ const trustPoints = [
 const testimonials = [
   {
     quote: "Vista Visuals transformed our online presence. The new website is not only beautiful but also drives significantly more leads than our old one.",
-    author: "Arjun Mehta",
+    author: "Rama Chandra",
     company: "Blueeyes Eco Resort",
-    image: "https://i.pravatar.cc/150?u=arjun"
+    image: "https://plus.unsplash.com/premium_photo-1722682239201-21c8173e776b?q=80&w=1143&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     quote: "The speed and professionalism of the team are unmatched. They delivered a high-converting landing page in record time.",
-    author: "Sarah Johnson",
+    author: "Nawed Hossain",
     company: "n8n LaunchPad",
-    image: "https://i.pravatar.cc/150?u=sarah"
+    image: "https://yt3.googleusercontent.com/SH5wynKI1TEsYmCRO8Sea1gtNy3Tl2DNeJRQlzmHnLYSEJOibp4QxUtwFIpDZwRX-FMVpKNWgaE=s160-c-k-c0x00ffffff-no-rj"
   },
   {
     quote: "I was skeptical about the 14-day guarantee, but they exceeded my expectations. The design is premium and reflects our brand perfectly.",
