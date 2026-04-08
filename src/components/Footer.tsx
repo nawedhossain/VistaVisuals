@@ -30,7 +30,7 @@ export default function Footer() {
               <li><Link to="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><a href="https://stats.uptimerobot.com/sY0fbYFbfJ" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Server Status</a></li>
-              <li><a href="https://books.zohosecure.in/portal/vistavisuals" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Client Portal</a></li>
+              <li><a href="https://dash.vistavisuals.in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Client Portal</a></li>
             </ul>
           </div>
 
