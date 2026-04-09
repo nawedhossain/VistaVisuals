@@ -63,12 +63,14 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="https://calendly.com/vistavisuals/web-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white text-black px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300 shadow-lg shadow-white/5"
           >
             Get Started
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -101,12 +103,14 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/vistavisuals/web-design-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-3 rounded-xl text-center font-semibold"
             >
               Get Started
-            </Link>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

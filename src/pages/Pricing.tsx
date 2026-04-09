@@ -110,12 +110,14 @@ export default function Pricing() {
               </div>
               
               <div className="relative z-10 space-y-4">
-                <Link
-                  to="/contact"
+                <a
+                  href="https://calendly.com/vistavisuals/web-design-consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full py-5 bg-white text-black rounded-2xl font-bold text-center hover:bg-black hover:text-white transition-all duration-300 text-lg"
                 >
                   Start Your Project
-                </Link>
+                </a>
                 <a
                   href="https://wa.me/918260409721"
                   target="_blank"

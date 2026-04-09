@@ -168,12 +168,14 @@ export default function Home() {
               View Portfolio
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/vistavisuals/web-design-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto bg-white/5 border border-white/10 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all duration-300"
             >
               Get Free Consultation
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -492,12 +494,14 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
-              <Link
-                to="/contact"
+              <a
+                href="https://calendly.com/vistavisuals/web-design-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 hover:text-white transition-all duration-300"
               >
                 Book Free Call
-              </Link>
+              </a>
               <a
                 href="https://wa.me/918260409721"
                 target="_blank"
