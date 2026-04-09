@@ -63,7 +63,7 @@ const testimonials = [
     quote: "Vista Visuals transformed our online presence. The new website is not only beautiful but also drives significantly more leads than our old one.",
     author: "Rama Chandra",
     company: "Blueeyes Eco Resort",
-    image: "https://plus.unsplash.com/premium_photo-1722682239201-21c8173e776b?q=80&w=1143&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9W7-_cc6aw3XSD_bblNi3_85dmoIaDqiChg&s"
   },
   {
     quote: "The speed and professionalism of the team are unmatched. They delivered a high-converting landing page in record time.",
