@@ -15,7 +15,7 @@ export default async function handler(
   }
 
   try {
-    const webhookUrl = process.env.WEBHOOK_URL || "https://pixel-wave.n8nlaunchpad.com/webhook/df3a79db-e7c0-4a0f-8a93-140bb3604b09";
+    const webhookUrl = process.env.WEBHOOK_URL || "https://n8n.n8nlaunchpad.com/webhook/df3a79db-e7c0-4a0f-8a93-140bb3604b09";
     
     // Build query parameters for GET request
     const params = new URLSearchParams({
