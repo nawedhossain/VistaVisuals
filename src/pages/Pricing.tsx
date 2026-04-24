@@ -111,7 +111,7 @@ export default function Pricing() {
               
               <div className="relative z-10 space-y-4">
                 <a
-                  href="https://calendly.com/vistavisuals/web-design-consultation"
+                  href="https://calendly.com/vistavisuals/meeting"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full py-5 bg-white text-black rounded-2xl font-bold text-center hover:bg-black hover:text-white transition-all duration-300 text-lg"

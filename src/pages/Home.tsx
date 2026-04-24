@@ -169,7 +169,7 @@ export default function Home() {
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
-              href="https://calendly.com/vistavisuals/web-design-consultation"
+              href="https://calendly.com/vistavisuals/meeting"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-white/5 border border-white/10 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all duration-300"
@@ -495,7 +495,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
               <a
-                href="https://calendly.com/vistavisuals/web-design-consultation"
+                href="https://calendly.com/vistavisuals/meeting"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 hover:text-white transition-all duration-300"
