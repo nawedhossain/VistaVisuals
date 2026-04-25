@@ -24,7 +24,7 @@ async function startServer() {
     }
 
     try {
-      const webhookUrl = process.env.WEBHOOK_URL || "https://n8n.n8nlaunchpad.com/webhook/df3a79db-e7c0-4a0f-8a93-140bb3604b09";
+      const webhookUrl = process.env.WEBHOOK_URL || "https://hook.eu1.make.com/4lcp8ry8imnrjmz5jjtuf1jno9xf367a";
       
       // Build query parameters for GET request
       const params = new URLSearchParams({
