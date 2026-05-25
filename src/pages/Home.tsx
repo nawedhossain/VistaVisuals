@@ -334,6 +334,7 @@ export default function Home() {
                     src={testimonial.image} 
                     alt={testimonial.author}
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                     className="w-12 h-12 rounded-full border border-white/10"
                   />
                   <div>
@@ -466,6 +467,7 @@ export default function Home() {
                   src="https://picsum.photos/seed/agency/800/1000" 
                   alt="Agency Work"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                   className="rounded-[32px] w-full h-auto"
                 />
               </motion.div>

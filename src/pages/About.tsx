@@ -50,6 +50,7 @@ export default function About() {
                 src="https://picsum.photos/seed/team/800/800" 
                 alt="Our Team"
                 referrerPolicy="no-referrer"
+                loading="lazy"
                 className="w-full h-auto"
               />
             </div>
