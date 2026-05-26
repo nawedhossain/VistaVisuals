@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
 
@@ -40,13 +40,12 @@ export default function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
-            <Zap size={24} fill="currentColor" />
-          </div>
-          <span className="text-2xl font-bold tracking-tight text-white">
-            Vista<span className="text-blue-500">Visuals</span>
-          </span>
+        <Link to="/" className="flex items-center group">
+          <img 
+            src="/logo.png" 
+            alt="Vista Visuals" 
+            className="h-10 w-auto transition-transform group-hover:scale-105" 
+          />
         </Link>
 
         {/* Desktop Nav */}
