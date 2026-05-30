@@ -14,12 +14,12 @@ const portfolioItems = [
   },
   { 
     id: 2, 
-    name: 'n8n LaunchPad', 
-    category: 'SaaS / Tech Website', 
-    image: 'https://picsum.photos/seed/software/800/600', 
-    description: 'Built a modern SaaS-style website for a managed n8n hosting platform. The layout focuses on product clarity, feature cards, pricing, and strong conversion sections.',
-    highlights: ['SaaS landing layout', 'Feature-based sections', 'Pricing structure', 'Trust badges', 'Conversion-focused CTA'],
-    link: 'https://n8nlaunchpad.com/'
+    name: 'Kapiva', 
+    category: 'D2C / Wellness Ecommerce', 
+    image: 'https://picsum.photos/seed/wellness/800/600', 
+    description: 'Developed a high-converting, modern storefront and layout optimization for Kapiva, a premier modern Ayurvedic brand. The layout focuses on product discovery, clean ingredient storytelling, and frictionless checkout flows.',
+    highlights: ['Modern D2C e-commerce layout', 'Ingredient storytelling sections', 'Optimized category landing pages', 'Mobile-first design', 'High conversion optimization'],
+    link: 'https://kapiva.in/'
   },
   { 
     id: 3, 

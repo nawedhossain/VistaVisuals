@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin size={18} className="text-blue-500 flex-shrink-0 mt-1" />
-                <span className="text-sm">14-15/1, Kamaraj Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560042</span>
+                <span className="text-sm">Reliance Jio office back side, Banka khajuri chakk, Baleshwar, Odisha, India 756002</span>
               </li>
               <li>
                 <a 

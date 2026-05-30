@@ -26,9 +26,9 @@ const portfolioItems = [
   },
   { 
     id: 2, 
-    name: 'n8n LaunchPad', 
-    category: 'SaaS / Tech Website', 
-    description: 'Built a modern SaaS-style website for a managed n8n hosting platform.'
+    name: 'Kapiva', 
+    category: 'D2C / Wellness Ecommerce', 
+    description: 'Developed a high-converting, modern storefront and layout optimization for Kapiva, a premier modern Ayurvedic brand.'
   },
   { 
     id: 3, 
@@ -66,10 +66,10 @@ const testimonials = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9W7-_cc6aw3XSD_bblNi3_85dmoIaDqiChg&s"
   },
   {
-    quote: "The speed and professionalism of the team are unmatched. They delivered a high-converting landing page in record time.",
-    author: "Nawed Hossain",
-    company: "n8n LaunchPad",
-    image: "https://yt3.googleusercontent.com/SH5wynKI1TEsYmCRO8Sea1gtNy3Tl2DNeJRQlzmHnLYSEJOibp4QxUtwFIpDZwRX-FMVpKNWgaE=s160-c-k-c0x00ffffff-no-rj"
+    quote: "The redesigned digital storefront provided by Vista Visuals completely transformed our customer experience. It has optimized our conversion rates and elevated our brand presence.",
+    author: "Ameve Sharma",
+    company: "Kapiva",
+    image: "https://i.pravatar.cc/150?u=ameve"
   },
   {
     quote: "I was skeptical about the 14-day guarantee, but they exceeded my expectations. The design is premium and reflects our brand perfectly.",

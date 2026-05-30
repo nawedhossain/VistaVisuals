@@ -91,7 +91,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-xl font-bold mb-1">Call Us</h4>
                     <p className="text-gray-400 text-lg">+91 82604 09721</p>
-                    <p className="text-gray-400 text-lg">Mon - Sat, 10am - 7pm</p>
+                    <p className="text-gray-400 text-lg">Mon - Sun, 8am - 10pm IST</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
@@ -101,8 +101,9 @@ export default function Contact() {
                   <div>
                     <h4 className="text-xl font-bold mb-1">Our Office</h4>
                     <p className="text-gray-400 text-lg">
-                      14-15/1, Kamaraj Rd, Tasker Town,<br />
-                      Shivaji Nagar, Bengaluru, Karnataka 560042
+                      Reliance Jio office back side,<br />
+                      Banka khajuri chakk, Baleshwar,<br />
+                      Odisha, India 756002
                     </p>
                   </div>
                 </div>
