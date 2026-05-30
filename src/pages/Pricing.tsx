@@ -51,11 +51,12 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch animate-fade-in">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
               className="p-10 rounded-[40px] bg-white/5 border border-white/5 flex flex-col justify-between"
             >
               <div>
@@ -78,7 +79,7 @@ export default function Pricing() {
                     '3 Months Free Support'
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3">
-                      <CheckCircle2 size={20} className="text-blue-500" />
+                      <CheckCircle2 size={20} className="text-blue-500 flex-shrink-0" />
                       <span className="text-gray-300">{item}</span>
                     </li>
                   ))}
@@ -87,8 +88,9 @@ export default function Pricing() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               className="p-10 rounded-[40px] bg-gradient-to-b from-blue-600 to-purple-700 shadow-2xl shadow-blue-500/20 relative overflow-hidden flex flex-col justify-between"
             >
               <div className="absolute top-0 right-0 p-8 opacity-10">
@@ -123,6 +125,63 @@ export default function Pricing() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full py-5 bg-white/10 text-white border border-white/20 rounded-2xl font-bold text-center hover:bg-white/20 transition-all duration-300 text-lg flex items-center justify-center gap-2"
+                >
+                  <MessageCircle size={20} fill="currentColor" />
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="p-10 rounded-[40px] bg-white/[0.02] border border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.05)] relative overflow-hidden flex flex-col justify-between hover:border-purple-500/50 transition-all duration-300"
+            >
+              <div className="relative z-10">
+                <div className="inline-block px-4 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-widest mb-6 border border-purple-500/30">
+                  Custom Solutions
+                </div>
+                <h3 className="text-3xl font-bold mb-2">Enterprise</h3>
+                <div className="flex items-baseline gap-2 mb-8">
+                  <span className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Custom</span>
+                </div>
+                <p className="text-gray-400 mb-10 text-lg leading-relaxed">
+                  Tailored high-performance infrastructure, deep integrations, and advanced automation for scaling organizations.
+                </p>
+                <ul className="space-y-4 mb-10">
+                  {[
+                    'All Goodness of Pro Plan',
+                    'AI Automations & Agents',
+                    'Dedicated Server / Cloud Instance',
+                    '24/7 Premium Priority Support',
+                    'CloudFlare CDN & Enterprise Guard',
+                    'Custom API & CRM Syncing',
+                    'Bi-weekly Growth & Conversion Audits',
+                    'Multi-language Support (i18n)'
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <CheckCircle2 size={20} className={cn("flex-shrink-0", item === 'All Goodness of Pro Plan' ? "text-purple-400 font-bold" : "text-purple-400")} />
+                      <span className={cn("text-sm font-medium", item === 'All Goodness of Pro Plan' ? "text-white font-bold" : "text-gray-300")}>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="relative z-10 space-y-4">
+                <a
+                  href="https://calendly.com/vistavisuals/meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-5 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl font-bold text-center hover:opacity-90 transition-all duration-300 text-lg shadow-lg shadow-purple-500/15"
+                >
+                  Book Free Consultation
+                </a>
+                <a
+                  href="https://wa.me/918260409721"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-5 bg-white/5 text-gray-300 border border-white/10 rounded-2xl font-bold text-center hover:bg-white/10 transition-all duration-300 text-lg flex items-center justify-center gap-2"
                 >
                   <MessageCircle size={20} fill="currentColor" />
                   Chat on WhatsApp

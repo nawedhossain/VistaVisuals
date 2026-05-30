@@ -353,7 +353,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <SectionHeader 
             title="Simple, Transparent Pricing" 
-            subtitle="One premium package designed to cover everything your business needs."
+            subtitle="Choose a plan designed to cover everything your business needs to grow."
           />
           
           <div className="flex justify-center mb-12">
@@ -379,47 +379,99 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="max-w-lg mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative p-10 rounded-[40px] bg-gradient-to-b from-blue-600 to-purple-700 shadow-2xl shadow-blue-500/20"
-            >
-              <div className="absolute top-8 right-8 px-4 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-widest">
-                Most Popular
-              </div>
-              <h3 className="text-2xl font-bold mb-2">Professional Website Design</h3>
-              <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-5xl font-bold">{currency === 'INR' ? '₹35,000' : '$400'}</span>
-                <span className="text-white/70">/project</span>
-              </div>
-              
-              <ul className="space-y-4 mb-10">
-                {[
-                  'Custom Design',
-                  'Mobile Responsive',
-                  'SEO Friendly',
-                  'Fast Loading',
-                  'Contact Form',
-                  'WhatsApp Integration',
-                  'Free 3yrs Cloud Hosting & Domain',
-                  '14 Day Money Back Guarantee'
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <CheckCircle2 size={20} className="text-white" />
-                    <span className="text-white/90">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <Link
-                to="/contact"
-                className="block w-full py-5 bg-white text-black rounded-2xl font-bold text-center hover:bg-black hover:text-white transition-all duration-300"
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative p-10 rounded-[40px] bg-gradient-to-b from-blue-600 to-purple-700 shadow-2xl shadow-blue-500/20 flex flex-col justify-between"
               >
-                Start Project
-              </Link>
-            </motion.div>
+                <div>
+                  <div className="absolute top-8 right-8 px-4 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-widest">
+                    Most Popular
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Professional Website</h3>
+                  <div className="flex items-baseline gap-2 mb-8">
+                    <span className="text-5xl font-bold">{currency === 'INR' ? '₹35,000' : '$400'}</span>
+                    <span className="text-white/70">/project</span>
+                  </div>
+                  
+                  <ul className="space-y-4 mb-10">
+                    {[
+                      'Custom Design',
+                      'Mobile Responsive',
+                      'SEO Friendly',
+                      'Fast Loading',
+                      'Contact Form',
+                      'WhatsApp Integration',
+                      'Free 3yrs Cloud Hosting & Domain',
+                      '14 Day Money Back Guarantee'
+                    ].map((item) => (
+                      <li key={item} className="flex items-center gap-3">
+                        <CheckCircle2 size={20} className="text-white flex-shrink-0" />
+                        <span className="text-white/90">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <a
+                  href="https://calendly.com/vistavisuals/meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-5 bg-white text-black rounded-2xl font-bold text-center hover:bg-black hover:text-white transition-all duration-300 pointer-events-auto"
+                >
+                  Start Project
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="p-10 rounded-[40px] bg-white/[0.02] border border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.05)] relative overflow-hidden flex flex-col justify-between hover:border-purple-500/50 transition-all duration-300"
+              >
+                <div>
+                  <div className="inline-block px-4 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-widest mb-6 border border-purple-500/30">
+                    Custom Solutions
+                  </div>
+                  <h3 className="text-3xl font-bold mb-2">Enterprise</h3>
+                  <div className="flex items-baseline gap-2 mb-8">
+                    <span className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Custom</span>
+                  </div>
+                  <p className="text-gray-400 mb-10 text-lg leading-relaxed">
+                    Tailored high-performance infrastructure, deep integrations, and advanced automation for scaling organizations.
+                  </p>
+                  <ul className="space-y-4 mb-10">
+                    {[
+                      'All Goodness of Pro Plan',
+                      'AI Automations & Agents',
+                      'Dedicated Server / Cloud Instance',
+                      '24/7 Premium Priority Support',
+                      'CloudFlare CDN & Enterprise Guard',
+                      'Custom API & CRM Syncing',
+                      'Bi-weekly Growth & Conversion Audits',
+                      'Multi-language Support (i18n)'
+                    ].map((item) => (
+                      <li key={item} className="flex items-center gap-3">
+                        <CheckCircle2 size={20} className={cn("flex-shrink-0", item === 'All Goodness of Pro Plan' ? "text-purple-400 font-bold" : "text-purple-400")} />
+                        <span className={cn("text-sm font-medium", item === 'All Goodness of Pro Plan' ? "text-white font-bold" : "text-gray-300")}>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <a
+                  href="https://calendly.com/vistavisuals/meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-5 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl font-bold text-center hover:opacity-90 transition-all duration-300 text-lg shadow-lg shadow-purple-500/15 text-center"
+                >
+                  Book Free Consultation
+                </a>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
