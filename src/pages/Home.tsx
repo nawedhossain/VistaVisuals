@@ -32,8 +32,8 @@ const portfolioItems = [
   },
   { 
     id: 3, 
-    name: 'Mahindra Auto', 
-    category: 'Automotive Website', 
+    name: 'Mahindra EV', 
+    category: 'Automotive EV Website', 
     description: 'Created a professional automotive-style website with vehicle showcase and inquiry-based conversion flow.'
   },
   { 
@@ -388,14 +388,17 @@ export default function Home() {
                 className="relative p-10 rounded-[40px] bg-gradient-to-b from-blue-600 to-purple-700 shadow-2xl shadow-blue-500/20 flex flex-col justify-between"
               >
                 <div>
-                  <div className="absolute top-8 right-8 px-4 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-widest">
+                  <div className="inline-block px-4 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
                     Most Popular
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Professional Website</h3>
+                  <h3 className="text-3xl font-bold mb-2">Professional Website</h3>
                   <div className="flex items-baseline gap-2 mb-8">
                     <span className="text-5xl font-bold">{currency === 'INR' ? '₹35,000' : '$400'}</span>
                     <span className="text-white/70">/project</span>
                   </div>
+                  <p className="text-white/80 mb-10 text-lg leading-relaxed">
+                    Perfect for businesses looking to establish a premium digital presence and convert more visitors into leads.
+                  </p>
                   
                   <ul className="space-y-4 mb-10">
                     {[

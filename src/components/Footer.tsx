@@ -24,7 +24,7 @@ export default function Footer() {
               <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
               <li><Link to="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><a href="https://up.vistavisuals.in/status/main" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Server Status</a></li>
+              <li><a href="https://stats.uptimerobot.com/KRG8tZph06" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Server Status</a></li>
               <li><a href="https://dash.vistavisuals.in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Client Portal</a></li>
             </ul>
           </div>

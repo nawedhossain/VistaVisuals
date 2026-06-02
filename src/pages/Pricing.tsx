@@ -98,7 +98,7 @@ export default function Pricing() {
               </div>
               
               <div className="relative z-10">
-                <div className="inline-block px-4 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-widest mb-6">
+                <div className="inline-block px-4 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-widest mb-6 border border-white/30">
                   Premium Package
                 </div>
                 <h3 className="text-3xl font-bold mb-2">Professional Website</h3>

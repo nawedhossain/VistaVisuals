@@ -23,8 +23,8 @@ const portfolioItems = [
   },
   { 
     id: 3, 
-    name: 'Mahindra Auto', 
-    category: 'Automotive Website', 
+    name: 'Mahindra EV', 
+    category: 'Automotive EV Website', 
     description: 'Created a professional automotive-style website with vehicle showcase, brand-focused layout, and inquiry-based conversion flow.',
     highlights: ['Vehicle showcase', 'Automotive UI layout', 'Inquiry form', 'Product highlight sections', 'Clean premium design'],
     link: 'https://www.mahindraelectricsuv.com/'
