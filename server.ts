@@ -24,7 +24,7 @@ async function startServer() {
     }
 
     try {
-      const webhookUrl = process.env.WEBHOOK_URL || "https://n8n.n8nlaunchpad.com/webhook/vv-form";
+      const webhookUrl = "https://n8n.n8nlaunchpad.com/webhook/vv-form";
       
       // Build query parameters for GET request
       const params = new URLSearchParams({
