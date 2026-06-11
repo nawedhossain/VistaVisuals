@@ -15,7 +15,7 @@ export default async function handler(
   }
 
   try {
-    const webhookUrl = "https://n8n.n8nlaunchpad.com/webhook/vv-form";
+    const webhookUrl = process.env.WEBHOOK_URL || "https://n8n.n8nlaunchpad.com/webhook/vv-form";
     
     // Build query parameters for GET request
     const params = new URLSearchParams({
